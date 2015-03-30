@@ -15,6 +15,8 @@ gem 'bootstrap-sass'
 
 gem 'bcrypt'
 
+gem 'factory_girl_rails', '4.2.1'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -33,5 +35,5 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', '2.2.0'
 end

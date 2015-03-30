@@ -1,0 +1,25 @@
+................F.F
+
+Failures:
+
+  1) User pages profile page should have title "Test User"
+     Failure/Error: it { should have_title(user.name) }
+       expected #has_title?("Test User") to return true, got false
+     # ./spec/requests/user_pages_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  2) User pages signup page 
+     Failure/Error: it { should have_title(full_title('Sign up')) }
+     NoMethodError:
+       undefined method `full_title' for #<RSpec::ExampleGroups::UserPages::SignupPage:0xca02fec>
+     # /home/alena/.rvm/gems/ruby-2.1.5/gems/actionpack-4.2.0/lib/action_dispatch/testing/assertions/routing.rb:165:in `method_missing'
+     # /home/alena/.rvm/gems/ruby-2.1.5/gems/actionpack-4.2.0/lib/action_dispatch/testing/integration.rb:397:in `method_missing'
+     # ./spec/requests/user_pages_spec.rb:19:in `block (3 levels) in <top (required)>'
+
+Finished in 1.04 seconds (files took 8.2 seconds to load)
+19 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/requests/user_pages_spec.rb:12 # User pages profile page should have title "Test User"
+rspec ./spec/requests/user_pages_spec.rb:19 # User pages signup page 
+
